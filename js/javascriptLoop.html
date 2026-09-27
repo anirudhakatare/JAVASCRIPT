@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Loop </title>
+    <script>
+        for(let i = 0; i<5; i++){
+            console.log(i);
+        }
+        for(let j = 1; j <=10; j++){
+            console.log(j);
+        }
+        
+    let sum = 0;
+    for(let f = 1; f <55 ; f ++){
+        sum = sum + f;
+        }
+     console.log(sum);
+     let totalEven = 0;
+     for(let g =0; g <=10; g++){
+        if(g%2 == 0){
+            totalEven++
+
+        }
+    else{
+        continue
+    }
+     }
+    console.log(totalEven)
+    let arr = [5,6,7,6,5,76]
+    let max = arr[0]
+    for(let i = 0 ; i< arr.length; i++){
+        if(arr[i]> max){
+            max = arr[i]
+        }
+    }
+    console.log(max)
+    for(let row = 1; row<=4; row++){
+        let line = "";
+        for(let star = 1; star<=row; star++){
+            line = line + "*"
+        }
+        console.log(line);
+    }
+    let str = "Programming is Fun and Awesome";
+    let vovel = 0;
+    for(let o =0; o<str.length;o++){
+        if(str[o]== 'a'|| str[o] == 'e'|| str[o]=='i'|| str[o] =='o'||str[o]=='u'){
+            vovel++
+        }
+    }
+    console.log(vovel)
+
+    let num = 13
+    let check  
+    for(let b = 2 ; b<13;b++){
+        check = num % b;
+        if(check == 0){
+            console.log("it is not prime number")
+        }
+    }
+    if(check!=0){
+        console.log(" prime number")
+    }
+    </script>
+</head>
+<body>
+    Objects
+</body>
+</html> 

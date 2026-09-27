@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> function </title>
+    <script>
+      function calculator(a, b, operator) {
+  switch (operator) {
+    case "+":
+      return a + b;
+    case "-":
+      return a - b;
+    case "*":
+      return a * b;
+    case "/":
+      if (b === 0) return "Error: Division by zero";
+      return a / b;
+    default:
+      return "Invalid operator";
+  }
+}
+
+    </script>
+</head>
+<body>
+    Objects
+</body>
+</html> 
