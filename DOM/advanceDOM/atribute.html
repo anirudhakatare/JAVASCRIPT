@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      span {
+        padding: 20px;
+      }
+      div {
+        margin-bottom: 2px;
+      }
+      .back{
+        padding: 30px;
+        background-color :aqua
+      }
+      .blue{
+        padding: 30px;
+        background-color: blue; 
+      }
+    </style>
+
+  </head>
+  <body>
+    <h3>This is basic html page</h3>
+    <div>
+      <div id = "box1"> BOX 1</div>
+      BOX 2 <br />
+      BOX 3 <br />
+    </div>
+    <div class="contaner">
+        <img id = "image" src="https://media.istockphoto.com/id/1795133707/photo/pet-owner-stroking-his-old-cat-and-dog-together.jpg?s=1024x1024&w=is&k=20&c=WgsEU3Zp34_6dONBHEi3wJd9l4wxweLVVulPxUYNF2I=" alt="error">
+    </div>
+    <span>
+      <button onclick="magic()">DO THE MAGIC</button>
+    </span>
+    <div>
+        <button onclick="fac()">
+            change
+        </button>
+    </div>
+  </body>
+</html>
+<script>
+    function magic(){
+        let b1 = document.getElementById("box1")
+        b1.innerHTML = "Magic done"
+    }
+    const img = document.getElementById('image');
+    img.setAttribute("alt","an image of a dog");
+    img.classList.add("back")
+
+
+    function fac(){
+        img.classList.toggle("back")
+        img.classList.toggle("blue")
+    }
+</script>

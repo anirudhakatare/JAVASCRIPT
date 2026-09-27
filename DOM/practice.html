@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li> home</li>
+            <li> home</li>
+            <li> home</li>
+            <li> home</li>
+            <li> home</li>
+        </ul>
+        <button onclick="border()">
+            add border
+        </button>
+    </nav>
+    <div id="title" class="COLOR">
+            This is for practice only
+    </div>
+    <button onclick="color()"> change the colour </button>
+    <p class="note">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum autem commodi officia incidunt cupiditate aut molestiae, repudiandae sunt iusto, quisquam eos quae, voluptates itaque necessitatibus minus perferendis optio! Nesciunt laudantium explicabo nobis cumque recusandae illum consequuntur qui odio nihil quae neque, sequi eos? Nihil cumque repellat eos natus, at dolorem.</p>
+    <button onclick="button()"> Change the font</button> <br>
+    <button onclick="change()">highight</button>
+    <div class="box1">
+        <span class="box"> ani </span>
+        <span class="box"> ani </span>
+        <span class="box"> ani </span>
+        <span class="box"> ani </span>
+    </div>
+    <button onclick="qually()"> qually call </button>
+    <button onclick="quallyall()">all</button>
+    <div id="tog">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, qui?
+    </div>
+    <button onclick="togle()">TOGLE</button>
+    <p id = "count">
+        <img>
+        <img>
+        <img>
+    </p>
+    <button onclick="count()"> count </button>
+</body>
+</html>
+<script>
+    function color(){
+        let b1 = document.getElementById("title")
+        console.log(b1)
+        b1.classList.add("blue")
+    }
+    function button(){
+        let p = document.getElementsByClassName("note")
+        console.log(p)
+        for(let Element of p)
+        Element.classList.add('font')
+    }
+    function border(){
+        let b = document.getElementsByTagName("ul")
+        console.log(b)
+        for(let Element of b){
+            Element.classList.add('border')
+        }
+    }
+    function qually(){
+        let q = document.querySelector('.box')
+        console.log(q)
+    }
+        function quallyall(){
+        let p = document.querySelectorAll('.box')
+        console.log(p)
+    }
+    function togle(){
+        let box = document.getElementById ('tog')
+        box.classList.toggle("gayab")
+    }
+    function change(){
+        let c = document.getElementsByClassName('note')
+        for(let ele of c){
+            ele.classList.toggle('popout')
+        }
+    }
+    function count(){
+        let b = document.getElementsByTagName("img")
+        let length = b.length
+        console.log(length)
+    }
+</script>
+<style> .blue{
+       background-color: rgb(13, 124, 221);
+       border: solid black;
+       color: blueviolet;
+    }
+    .font{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .border{
+        border: solid black;
+    }
+    .gayab{
+        color: white
+    }
+    .popout{
+        background-color: yellow;
+    }
+</style>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      span {
+        padding: 20px;
+      }
+      div {
+        margin: bottom 20px;
+      }
+    </style>
+<script>
+    function magic(){
+        let b1 = document.getElementById("box1")
+        b1.innerHTML = "Magic done"
+    }
+</script>
+  </head>
+  <body>
+    <h3>This is basic html page</h3>
+    <div>
+      <div id = "box1"> BOX 1</div>
+      BOX 2 <br />
+      BOX 3 <br />
+    </div>
+    <span>
+      <button onclick="magic()">DO THE MAGIC</button>
+    </span>
+  </body>
+</html>
